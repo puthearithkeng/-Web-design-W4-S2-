@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+        }
+        #container
+        {   
+            width: 56.25em;
+            height: 96vh;
+            padding: 1em;
+            gap: 1em;
+            flex-direction: column;
+            display: flex;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: aliceblue;
+        }
+        #middle
+        {
+            display: flex;
+            flex-grow: 1;
+            gap: 1em;
+        }
+        header {
+            display: flex ;
+            background-color: #1e90ff;
+            height: 100px;
+            border-radius: 20px;
+            align-items: center;
+            padding-left: 30px;
+            box-shadow: 4px 4px  #0077ea;
+        }
+        nav{
+            background-color: #3cb371;
+            border-radius: 20px;
+            box-shadow: 4px 4px  #2f8d59;
+          
+        }
+        article {
+            display: flex;
+            background-color: #ff6347;
+            flex-grow: 1;
+            border-radius: 20px;
+            justify-content: center;
+            padding-top : 30px;
+            box-shadow: 4px 4px  #e02200;
+      
+        }
+        footer {
+            display: flex;
+            background-color: #4169e1;
+            box-shadow: 4px 4px  #1d44b8;
+            height: 100px;
+            border-radius: 20px;
+            align-items: center;
+            padding-left: 30px;
+        }
+        #main {
+            display: flex;
+            flex-grow: 3;
+            width: 200px;
+            flex-wrap: wrap;
+            align-items: flex-start ;
+            justify-content: flex-end;
+            gap: 20px;
+            padding-top: 30px;
+            padding-left: 10px;
+            flex-direction: row-reverse;
+        }  
+        .items {
+            display: flex;
+            background-color: #2f8d59;
+            box-shadow: 4px 4px  #226741;
+            width: 150px;
+            height: 150px;
+            border-radius: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+        #main-name {
+            width: 600px;
+            height: 10px;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header>Header</header>
+        <div id="middle">
+            <nav id="main">
+                <div id="main-name">main</div>
+                <div class="items">item</div>
+                <div class="items">item</div>
+                <div class="items">item</div>
+                <div class="items">item</div>
+                <div class="items">item</div>
+                <div class="items">item</div>
+                <div class="items">item</div>
+                <div class="items">item</div>
+                <div class="items">item</div>
+                <div class="items">item</div>
+                <div class="items">item</div>
+            </nav>
+            <article>Sidebar</article>
+        </div>
+        <footer>Footer</footer>
+    </div>
+</body>
+</html>
